@@ -6,9 +6,10 @@ import javax.persistence.Persistence;
 
 public class EntityManagerUtil {
 	private static final EntityManagerFactory entityManagerFactory;
+	private static final String PERSISTENCE_UNIT_NAME = "programmers";
 	static {
 		try {
-			entityManagerFactory = Persistence.createEntityManagerFactory("programmers");
+			entityManagerFactory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
 		} catch (Throwable ex) {
 			System.out.println("Failed to create entity manager factory.");
 			throw new ExceptionInInitializerError(ex);
