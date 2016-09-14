@@ -23,6 +23,17 @@ public class Color implements Serializable {
 	@Column(name = "hex_code")
 	private String hexCode;
 
+	@Column(name = "name")
+	private String name;
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
 	public void setHexCode(String hexCode) {
 		this.hexCode = hexCode;
 	}

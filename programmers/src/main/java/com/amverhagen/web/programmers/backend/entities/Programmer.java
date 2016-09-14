@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -25,15 +26,15 @@ public class Programmer implements Serializable {
 	private String fullName;
 
 	@ManyToOne
-	@Column(name = "favorite_color")
+	@JoinColumn(name = "favorite_color")
 	private Color favoriteColor;
 
 	@ManyToOne
-	@Column(name = "favorite_programming_language")
+	@JoinColumn(name = "favorite_programming_language")
 	private ProgrammingLanguage favoriteProgrammingLanguage;
 
 	@ManyToOne
-	@Column(name = "disliked_programming_language")
+	@JoinColumn(name = "disliked_programming_language")
 	private ProgrammingLanguage dislikedProgrammingLanguage;
 
 	public void setId(long id) {

@@ -12,6 +12,7 @@ public class EntityManagerUtil {
 			entityManagerFactory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
 		} catch (Throwable ex) {
 			System.out.println("Failed to create entity manager factory.");
+			ex.printStackTrace();
 			throw new ExceptionInInitializerError(ex);
 		}
 	}
