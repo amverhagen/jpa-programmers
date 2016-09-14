@@ -42,4 +42,9 @@ public class Color implements Serializable {
 		return this.hexCode;
 	}
 
+	@Override
+	public String toString() {
+		return this.name;
+	}
+
 }

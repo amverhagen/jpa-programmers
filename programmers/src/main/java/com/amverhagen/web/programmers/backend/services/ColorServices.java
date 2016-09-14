@@ -37,4 +37,13 @@ public class ColorServices {
 		}
 	}
 
+	public static Color getColorWithName(String colorName) {
+		for (Color savedColor : ColorServices.getColors()) {
+			if (savedColor.getName().equals(colorName)) {
+				return savedColor;
+			}
+		}
+		return null;
+	}
+
 }

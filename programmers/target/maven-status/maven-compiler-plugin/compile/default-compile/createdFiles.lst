@@ -1,2 +1,9 @@
 com\amverhagen\web\programmers\frontend\MyUI.class
+com\amverhagen\web\programmers\backend\entities\Color.class
+com\amverhagen\web\programmers\backend\services\ProgrammingLanguageServices.class
+com\amverhagen\web\programmers\backend\services\ColorServices.class
+com\amverhagen\web\programmers\backend\entities\Programmer.class
+com\amverhagen\web\programmers\backend\EntityManagerUtil.class
+com\amverhagen\web\programmers\backend\entities\ProgrammingLanguage.class
+com\amverhagen\web\programmers\backend\services\ProgrammerServices.class
 com\amverhagen\web\programmers\frontend\MyUI$MyUIServlet.class

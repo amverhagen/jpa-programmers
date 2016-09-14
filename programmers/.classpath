@@ -27,10 +27,11 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/eclipselink.jar"/>
-	<classpathentry kind="lib" path="lib/javax.persistence_2.1.1.v201509150925.jar"/>
-	<classpathentry kind="lib" path="lib/javax.persistence.source_2.1.1.v201509150925.jar"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.39-bin.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="target/generated-resources/gwt">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
